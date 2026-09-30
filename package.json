@@ -1,0 +1,12 @@
+{
+  "name": "aerotech-staff",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AeroTech operations floor for RESIDUAL Command Station",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node aerotech/server.cjs",
+    "aerotech": "node aerotech/server.cjs",
+    "test": "node --test aerotech/test/*.test.cjs"
+  }
+}

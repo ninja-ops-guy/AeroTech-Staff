@@ -1,0 +1,85 @@
+{
+  "sha256": "a3a7a2b287f16dea38a62ea4c2ccb314b2e1485d36ab0f12dfaa31f385571955",
+  "files": [
+    {
+      "path": "ASSET-MANIFEST.json",
+      "sha256": "c791fdfc2e464f93065b85967fc1b6fcd55b1c85672efd3c0394f675116896ba"
+    },
+    {
+      "path": "README.md",
+      "sha256": "726fd5e0c66ebf789c4e6e00d36d8d2eb264ab00d0b602870c08416bd2dcbf04"
+    },
+    {
+      "path": "STARNET-LICENSE.txt",
+      "sha256": "576bf9e6651870a13ef8b0067ccbd85e4781999b6da32c767891997cf65d46b7"
+    },
+    {
+      "path": "lib/commands.cjs",
+      "sha256": "cdf80f0b5baf5ea146f2c7e1518f4cf4217902bba17cc146d458861d8c4f6fca"
+    },
+    {
+      "path": "lib/station.cjs",
+      "sha256": "489f0f6a838245129d99985dfd25691d44750895023c187ef05dbf3b657d1bc6"
+    },
+    {
+      "path": "package.json",
+      "sha256": "ea91b86b705907505f7dd1658c51ecc7f42ec7570b48b2e9f44c60824300a4e3"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "a44c5a09a98bcc7e79ba838bf818462d61a7e5b427e3282e688c239c9aae569e"
+    },
+    {
+      "path": "public/assets/industrial.webp",
+      "sha256": "6cca3cec34b2150d838a9eeef084d4ff34abec68b4c8cf1130eb41531562d3ca"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "0e0b7a4b38ee0aec58f4dfc90df4197881e8281c00234f06c0c367b0a48176cb"
+    },
+    {
+      "path": "public/mark.svg",
+      "sha256": "370445fb47dff5935807bf70653a1d04bd238630ac0a9fb23740ea3a345bbcfc"
+    },
+    {
+      "path": "public/projection.js",
+      "sha256": "021f56fe8ed80bb8224797f358200cb19e54b666c20918fed075a62cf6d1e8f0"
+    },
+    {
+      "path": "public/style.css",
+      "sha256": "e7d1ad5de4be147e80f72b632e19cdfef14840bb6904e1f89a1ad1fe88132f15"
+    },
+    {
+      "path": "public/type.css",
+      "sha256": "b06a4de0ef6a21b7beab5e6d84f1e89d32c79042d64b016d664c1f9aace742ff"
+    },
+    {
+      "path": "public/vendor/worldmodel.js",
+      "sha256": "15b1ce071552f7108c9def308cd20b2daeb09993f4a2e3138d2e47ed98fbd2c5"
+    },
+    {
+      "path": "public/world.js",
+      "sha256": "aa3bfd07101bc092b187342ea73c27e02735057dc69d374473945e697e80e2e9"
+    },
+    {
+      "path": "qa/station_fixture.py",
+      "sha256": "2d6b0ef7ecf29bed4124de9c606bcbd58439e6bfd02e0577af73a97602c19978"
+    },
+    {
+      "path": "qa/verify.cjs",
+      "sha256": "63fc86e8ee17d751cf23c6e8594a51f3d5f991f514077d6c6bb906da46f060f7"
+    },
+    {
+      "path": "server.cjs",
+      "sha256": "bdc3f97aa07fe44f0592d02f473a2d191514d10d826900869c7ef8c000957964"
+    },
+    {
+      "path": "start-aerotech.cmd",
+      "sha256": "dba2a9b1cad08d476b810fa0d06f59009d47be489f67653952f938aba68fd4e1"
+    },
+    {
+      "path": "test/adapter.test.cjs",
+      "sha256": "5fab446c9f517e0e0972305bf18c7d34b57a0f016d6644fc3200b9da140061e4"
+    }
+  ]
+}

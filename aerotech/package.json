@@ -1,0 +1,8 @@
+{
+  "name": "aerotech-operations",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TechOps Hero operations floor for RESIDUAL Command Station",
+  "engines": {"node": ">=20"},
+  "scripts": {"start": "node server.cjs", "test": "node --test test/*.test.cjs"}
+}

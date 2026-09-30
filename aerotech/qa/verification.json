@@ -1,0 +1,39 @@
+{
+  "verified_at": "2026-09-30T04:07:56.409Z",
+  "unit_tests": 10,
+  "station_transport": "PASS",
+  "source_contract": "8369f0dc2a93d8dcb194220b85b9aaf87d1d6df2",
+  "live_provider_calls": 0,
+  "fixture": "Real RESIDUAL training mission: scripted proposals; actual local Git/check/review/integration execution",
+  "host_states": [
+    "integrated",
+    "approved",
+    "ready"
+  ],
+  "event_count": 21,
+  "artifact_read": "PASS",
+  "token_exposure": "NOT_OBSERVED",
+  "limitations": [
+    "controls opt in; no direct approval/integration override",
+    "polling snapshots; separate project/event reads",
+    "preflight revision check is not an atomic host compare-and-swap",
+    "no independent receipt verification",
+    "no Windows or Tauri package qualification",
+    "no live Hermes/model qualification"
+  ],
+  "browser": "PASS",
+  "browser_engine": "140.0.7339.186",
+  "page_errors": [],
+  "desktop_and_mobile": "PASS",
+  "reconnect_reload": "PASS",
+  "stale_retention": "PASS",
+  "controlled_pause_resume": "PASS",
+  "controlled_triage_run": "PASS: all three training tasks integrated by the host",
+  "durable_command_replay": "PASS in focused tests",
+  "expected_http_errors": [
+    "502 after intentional station stop"
+  ],
+  "canvas_used_techops_assets": true,
+  "source_manifest_sha256": "a3a7a2b287f16dea38a62ea4c2ccb314b2e1485d36ab0f12dfaa31f385571955",
+  "source_manifest_scope": "Source and documentation entries in BUILD-MANIFEST.json; image assets separately hashed in ASSET-MANIFEST.json; QA screenshots excluded."
+}

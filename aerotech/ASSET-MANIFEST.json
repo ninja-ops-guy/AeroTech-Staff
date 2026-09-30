@@ -1,0 +1,52 @@
+{
+  "name": "AeroTech Operations",
+  "asset_source": "https://github.com/ninja-ops-guy/techops-hero",
+  "asset_commit": "9c8eb0509701026f276c66b9c9a99f529aabfc18",
+  "reuse_basis": "Owner requested reuse of their core game assets in this build; no third-party rights expansion asserted.",
+  "assets": [
+    {
+      "file": "public/assets/industrial.webp",
+      "source_path": "assets/visual-combat/industrial.webp",
+      "sha256": "6cca3cec34b2150d838a9eeef084d4ff34abec68b4c8cf1130eb41531562d3ca",
+      "bytes": 425976,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/mike.png",
+      "source_path": "assets/handoff/mike.png",
+      "sha256": "155c9f4fae30b249552abddaaf6055b100157fb95d11883fa00139fbb5a3c290",
+      "bytes": 76195,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/operator.png",
+      "source_path": "assets/campaign/plating.operator.idle.png",
+      "sha256": "35c5bc4db25b7f3012fc1f64c96da8a24567ff3564610263ab8eefdfdee93fac",
+      "bytes": 17026,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/clerk.png",
+      "source_path": "assets/campaign/shipping.clerk.idle.png",
+      "sha256": "6c5a50461682e80a4788e0599f861b8ce1caf412b16887b33e3cc35695a6daff",
+      "bytes": 78618,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/printer.png",
+      "source_path": "assets/campaign/shipping.label_printer.png",
+      "sha256": "cc531b408761532122c84ab6e7ae78e38925a1192b61939999dcc226c600d2f7",
+      "bytes": 16095,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/terminal.png",
+      "source_path": "assets/campaign/plating.workstation_cracked.png",
+      "sha256": "0a7c2b504ff52d0eba2b0e816435504cf6130c3eba7e8c9eb1bb640f4c0a389e",
+      "bytes": 43233,
+      "transform": "byte-for-byte copy"
+    }
+  ],
+  "upstream_commit": "fbddbf992f8e7082196f07c3024781fcf1c276fc",
+  "residual_commit": "8369f0dc2a93d8dcb194220b85b9aaf87d1d6df2"
+}
