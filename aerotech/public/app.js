@@ -9,7 +9,7 @@ function notice(message){$('#notice').textContent=message;}
 function badge(task){return el('span','badge '+task.tone,task.label);}
 function showEvidence(title,value){$('#evidence-title').textContent=title;$('#evidence-body').textContent=typeof value==='string'?value:JSON.stringify(value,null,2);$('#evidence-dialog').showModal();}
 function row(label,value){const r=el('div','info-row');r.append(el('span','',label),el('code','',value||'Not recorded'));return r;}
-function selectTask(id){state.selected=id;renderTasks();renderInspector();world.set(state.project?.tasks||[],id,mode(),state.stale);}
+function selectTask(id){state.selected=id;renderTasks();renderInspector();world.set(state.project?.tasks||[],id,mode()+':'+(state.project?.id||''),state.stale,!!state.project?.paused);}
 function renderMissions(){
   const target=$('#mission-list');target.replaceChildren();$('#mission-count').textContent=state.projects.length;
   const term=$('#search').value.toLowerCase();
@@ -29,6 +29,7 @@ function renderInspector(){
   const t=state.project?.tasks.find(x=>x.id===state.selected);const target=$('#inspector-content');
   if(!t){target.replaceChildren();const d=el('div','empty-inspector');d.append(el('div','empty-symbol','◎'),el('h3','','Every task has a story.'),el('p','','Select a worker or task to inspect its state, candidate, checks, and recorded evidence.'));target.append(d);return;}
   target.replaceChildren(badge(t),el('h3','',t.title),el('p','',t.instruction||'No task instruction recorded.'));
+  const appearance=el('label','crew-picker','Character appearance');const picker=el('select');picker.id='crew-character';picker.setAttribute('aria-label','Character appearance');for(const a of AeroCrew.atlas){const option=el('option','',a.name);option.value=a.id;picker.append(option);}picker.value=world.character(t).id;picker.onchange=()=>{world.choose(t,picker.value);};appearance.append(picker);target.append(appearance,el('p','small','Local appearance only. Tasks with the same worker share this look.'));
   target.append(row('Task',t.id),row('Worker',t.owner||'Unassigned'),row('Attempt',String(t.attempt)),row('Host state',t.state),row('Candidate',t.head_commit),row('Base',t.base_commit),row('Spec digest',state.project.spec_hash));
   const actions=el('div','evidence-actions');
   const checks=el('button','',`Recorded checks (${t.checks_result?.length||0}) ↗`);checks.onclick=()=>showEvidence('Host-recorded checks',t.checks_result||[]);actions.append(checks);
@@ -46,6 +47,7 @@ function renderEvents(){
   }
 }
 function render(){
+  world.set(state.project?.tasks||[],state.selected,mode()+':'+(state.project?.id||''),state.stale,!!state.project?.paused);
   renderMissions();renderTasks();renderInspector();renderEvents();
   $('#mission-name').textContent=state.project?.name||'AeroTech command floor';
   $('#mode-badge').textContent=mode();$('#mode-badge').className='badge '+(state.demo?'review':state.project?'active':'neutral');
@@ -60,7 +62,6 @@ function render(){
   $('#source-note').textContent=state.demo?'Exploring labeled fixtures. No work is dispatched.':state.config?.station_url?`Reading ${state.config.station_url}. Tasks remain owned by RESIDUAL.`:'Connect your local RESIDUAL Command Station to see its missions.';
   $('#freshness').textContent=state.demo?'Demo fixtures · not live':state.observed?`${state.stale?'Last successful read':'Snapshot'} ${new Date(state.observed).toLocaleTimeString()}`:'No station data loaded';
   $('#station-link').hidden=!state.config?.station_url;if(state.config?.station_url)$('#station-link').href=state.config.station_url;
-  world.set(state.project?.tasks||[],state.selected,mode(),state.stale);
 }
 async function loadProject(id){
   const generation=++state.generation;

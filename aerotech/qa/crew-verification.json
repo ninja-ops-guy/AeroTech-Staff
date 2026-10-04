@@ -1,0 +1,31 @@
+{
+  "source_manifest_sha256": "19c715b25b2d1e93b7cebf36696379073a759c9796f72afa41e1a42585bb2c7e",
+  "verified_at": "2026-10-03T17:38:18.988Z",
+  "browser": "140.0.7339.186",
+  "fixture": "AeroTech local demo plus presentation-only transitions",
+  "characters": [
+    "man",
+    "kat",
+    "operator",
+    "clerk",
+    "mike",
+    "waldo"
+  ],
+  "checks": [
+    "six distinct default characters",
+    "idle frames advance",
+    "canvas click selects task",
+    "appearance choice persists across reload",
+    "authored locomotion frames on room transition",
+    "paused canvas frozen",
+    "stale canvas frozen",
+    "reduced-motion canvas frozen",
+    "crowded-room overflow retained in task list",
+    "board/floor switch",
+    "390px viewport without horizontal overflow"
+  ],
+  "page_errors": [],
+  "post_requests": [],
+  "unit_tests": 16,
+  "scope": "Visual crew update only. No new live RESIDUAL, provider, Windows or acceptance qualification."
+}

@@ -45,8 +45,35 @@
       "sha256": "0a7c2b504ff52d0eba2b0e816435504cf6130c3eba7e8c9eb1bb640f4c0a389e",
       "bytes": 43233,
       "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/waldo.png",
+      "source_path": "assets/handoff/waldo.png",
+      "sha256": "303b8e2b34f24a1b95b70bb5d8d24f86fe7c86b3728b671f6b37899ce476ddb3",
+      "bytes": 96592,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/kat.png",
+      "source_path": "assets/handoff/kat.png",
+      "sha256": "0ab0eb65769d483f590a1876db63b7de2a7e6b8e371c9dbf054f0e98e5bef2bc",
+      "bytes": 77519,
+      "transform": "byte-for-byte copy"
+    },
+    {
+      "file": "public/assets/man.png",
+      "source_path": "assets/handoff/man.png",
+      "sha256": "de2923e4ba05cf9158a934d921016a24d66c5c042f79cfe406c6c50b45dcea54",
+      "bytes": 89717,
+      "transform": "byte-for-byte copy"
     }
   ],
   "upstream_commit": "fbddbf992f8e7082196f07c3024781fcf1c276fc",
-  "residual_commit": "8369f0dc2a93d8dcb194220b85b9aaf87d1d6df2"
+  "residual_commit": "8369f0dc2a93d8dcb194220b85b9aaf87d1d6df2",
+  "crew_atlas": {
+    "file": "public/crew-atlas.js",
+    "source_path": "assets/handoff/atlas.json",
+    "source_sha256": "2b5ab97383f9b4f85a6adbbcfe55bc88dec97cba05bf3495ab9a3dc79b946636",
+    "transform": "First 12 frame rects and pivots for Mike, Waldo, Katrin and Manchez; idle row 0 and locomotion row 1. Static staff pivots measured from PNG alpha bounds. No image pixels modified."
+  }
 }

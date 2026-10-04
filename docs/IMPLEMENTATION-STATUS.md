@@ -1,6 +1,6 @@
 # AeroTech Staff implementation status
 
-As of 2026-09-30, this repository contains a runnable local alpha imported from development commit `6f94d9cb181f31ec0e28dfe4263c5dfb43f34773`. The original app files and evidence are unchanged; root documentation and npm scripts make this a standalone repository.
+Initial import: 2026-09-30, this repository contains a runnable local alpha imported from development commit `6f94d9cb181f31ec0e28dfe4263c5dfb43f34773`. The initial import was byte-identical. The October 3 crew update modifies the renderer and local UI; original integration evidence is retained separately.
 
 ## Decisions after master spec R0
 
@@ -21,7 +21,7 @@ The verification record applies to the source manifest it names. Root packaging 
 
 ## Remaining work
 
-R0 qualification gates are not declared passed by this import. In particular, host-side atomic revision checks and idempotency, unknown-outcome reconciliation, independently verified receipts, live Hermes qualification, richer character/room selection and a Windows desktop package remain future work. A native `integrated` task is displayed as Integrated; it is not promoted to an invented Accepted state.
+R0 qualification gates are not declared passed by this import. In particular, host-side atomic revision checks and idempotency, unknown-outcome reconciliation, independently verified receipts, live Hermes qualification, richer room selection and a Windows desktop package remain future work. A native `integrated` task is displayed as Integrated; it is not promoted to an invented Accepted state.
 
 ## Parallel Hermes continuation
 
@@ -37,3 +37,9 @@ Use the original master spec's H0 coordinator and A-E work assignments, with the
 | E verification | `aerotech/test/`, `aerotech/qa/` | Qualify each new candidate and record explicit remaining gaps |
 
 Keep the vendored model and source attribution intact. Changes to shared contracts, manifests or another lane's files go through H0. Use isolated branches/worktrees for simultaneous edits, then integrate and verify a single pinned candidate. See R0 for detailed dispatch prompts and acceptance cases; reconcile its proposed contracts with the verified native API before implementation.
+
+## October 3 crew update
+
+Six TechOps characters now have stable worker-based appearance assignments and a local picker. Mike, Waldo, Katrin and Manchez use authored idle and locomotion frames; operator/clerk assets are static. Foot anchors use the source atlas metadata (or measured PNG alpha bounds for static staff). Motion is elapsed-time based, freezes for stale/paused missions and respects reduced motion. Visible slots cap at four per room with overflow retained in the task list. Mobile canvas bounds now stay within the floor column.
+
+Six added tests plus the ten adapter tests pass. The separate crew browser receipt covers desktop/mobile, character persistence, canvas selection, locomotion, frozen states and crowded rooms. It does not requalify live RESIDUAL integration. The original build manifest is retained at `aerotech/qa/initial-build-manifest.json`; the current manifest is `aerotech/BUILD-MANIFEST.json`.

@@ -2,7 +2,7 @@
 
 A local operations floor for RESIDUAL Command Station, styled with TechOps Hero game assets. This repository contains the tested **0.1 source-run alpha** and the master implementation specification for continued development.
 
-![AeroTech operations floor](aerotech/qa/aerotech-floor.png)
+![AeroTech operations floor](aerotech/qa/crew-desktop.png)
 
 ## Start
 
@@ -32,6 +32,14 @@ Run requests can use the station's configured model providers and execute its pe
 
 On Windows, you can also double-click `aerotech/start-aerotech.cmd` and keep its terminal open.
 
+## TechOps crew
+
+The floor now includes Mike, Waldo, Katrin, Manchez, the plating operator and the shipping clerk. Select a task and use **Character appearance** to choose a local look; tasks assigned to the same worker share that choice. Choices persist in this browser.
+
+Four characters use the game’s authored idle and locomotion frames. The operator and clerk use their static game portraits. Room transitions use elapsed-time movement with foot anchors; stale or paused missions freeze, and **Motion off** gives an unanimated view. These are cosmetic task representations, not additional agents.
+
+The update passes 16 focused tests and desktop/mobile browser checks. See [`crew-verification.json`](aerotech/qa/crew-verification.json) for the checks and limits.
+
 ## Contents
 
 - [`aerotech/`](aerotech/): standalone app, local adapter, durable command journal and game artwork.
@@ -52,6 +60,6 @@ The broader verification harness is `aerotech/qa/verify.cjs`; provide a RESIDUAL
 
 ## Provenance
 
-Imported from development commit `6f94d9cb181f31ec0e28dfe4263c5dfb43f34773`, based on StarNet `fbddbf992f8e7082196f07c3024781fcf1c276fc`. The standalone application is preserved byte-for-byte, including its original build manifest and verification evidence. This repository does not contain the full StarNet desktop source or history.
+Imported from development commit `6f94d9cb181f31ec0e28dfe4263c5dfb43f34773`, based on StarNet `fbddbf992f8e7082196f07c3024781fcf1c276fc`. The initial import preserved the standalone application byte-for-byte. Subsequent crew changes are recorded in Git; the original source manifest is retained in `aerotech/qa/initial-build-manifest.json`, and its original verification remains historical evidence. This repository does not contain the full StarNet desktop source or history.
 
 StarNet's vendored document model retains its [MIT notice](aerotech/STARNET-LICENSE.txt). TechOps Hero artwork was reused at the owner's request; the [asset manifest](aerotech/ASSET-MANIFEST.json) records exact sources and hashes. Those game assets are not covered by StarNet's MIT notice. No broader license grant is asserted here.

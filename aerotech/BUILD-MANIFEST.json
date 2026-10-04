@@ -1,13 +1,13 @@
 {
-  "sha256": "a3a7a2b287f16dea38a62ea4c2ccb314b2e1485d36ab0f12dfaa31f385571955",
+  "sha256": "19c715b25b2d1e93b7cebf36696379073a759c9796f72afa41e1a42585bb2c7e",
   "files": [
     {
       "path": "ASSET-MANIFEST.json",
-      "sha256": "c791fdfc2e464f93065b85967fc1b6fcd55b1c85672efd3c0394f675116896ba"
+      "sha256": "98a51b85eb0dea9b0c1183495e1f51e3567ef6dc967bd9fb407e2ef31884f5f3"
     },
     {
       "path": "README.md",
-      "sha256": "726fd5e0c66ebf789c4e6e00d36d8d2eb264ab00d0b602870c08416bd2dcbf04"
+      "sha256": "5459ba1f1a173b26901e24d1da01c12944194f8b509331e23a497843d44b18a7"
     },
     {
       "path": "STARNET-LICENSE.txt",
@@ -27,15 +27,55 @@
     },
     {
       "path": "public/app.js",
-      "sha256": "a44c5a09a98bcc7e79ba838bf818462d61a7e5b427e3282e688c239c9aae569e"
+      "sha256": "3ca2f868ed2ab699f6423173523f019076e136374b4e3b021d5decc5d57795ed"
+    },
+    {
+      "path": "public/assets/clerk.png",
+      "sha256": "6c5a50461682e80a4788e0599f861b8ce1caf412b16887b33e3cc35695a6daff"
     },
     {
       "path": "public/assets/industrial.webp",
       "sha256": "6cca3cec34b2150d838a9eeef084d4ff34abec68b4c8cf1130eb41531562d3ca"
     },
     {
+      "path": "public/assets/kat.png",
+      "sha256": "0ab0eb65769d483f590a1876db63b7de2a7e6b8e371c9dbf054f0e98e5bef2bc"
+    },
+    {
+      "path": "public/assets/man.png",
+      "sha256": "de2923e4ba05cf9158a934d921016a24d66c5c042f79cfe406c6c50b45dcea54"
+    },
+    {
+      "path": "public/assets/mike.png",
+      "sha256": "155c9f4fae30b249552abddaaf6055b100157fb95d11883fa00139fbb5a3c290"
+    },
+    {
+      "path": "public/assets/operator.png",
+      "sha256": "35c5bc4db25b7f3012fc1f64c96da8a24567ff3564610263ab8eefdfdee93fac"
+    },
+    {
+      "path": "public/assets/printer.png",
+      "sha256": "cc531b408761532122c84ab6e7ae78e38925a1192b61939999dcc226c600d2f7"
+    },
+    {
+      "path": "public/assets/terminal.png",
+      "sha256": "0a7c2b504ff52d0eba2b0e816435504cf6130c3eba7e8c9eb1bb640f4c0a389e"
+    },
+    {
+      "path": "public/assets/waldo.png",
+      "sha256": "303b8e2b34f24a1b95b70bb5d8d24f86fe7c86b3728b671f6b37899ce476ddb3"
+    },
+    {
+      "path": "public/crew-atlas.js",
+      "sha256": "b1cd1731a7e500526d5af922c00e4826a4e63fc97faa0b08d06d7a2dfa0bf04c"
+    },
+    {
+      "path": "public/crew.js",
+      "sha256": "f74372c10077d84a83c858195e3622c6f0305274ba8bfc4cfc678f0a21bed118"
+    },
+    {
       "path": "public/index.html",
-      "sha256": "0e0b7a4b38ee0aec58f4dfc90df4197881e8281c00234f06c0c367b0a48176cb"
+      "sha256": "f0108fcc6379f1f54aff61e2c841c1c86701cd706141f4fd1efd93c7066a9bc3"
     },
     {
       "path": "public/mark.svg",
@@ -47,7 +87,7 @@
     },
     {
       "path": "public/style.css",
-      "sha256": "e7d1ad5de4be147e80f72b632e19cdfef14840bb6904e1f89a1ad1fe88132f15"
+      "sha256": "a9294c56da9b6bf909d2eec07d332c14bb78f015f3180de0f81f088695e223d0"
     },
     {
       "path": "public/type.css",
@@ -59,11 +99,15 @@
     },
     {
       "path": "public/world.js",
-      "sha256": "aa3bfd07101bc092b187342ea73c27e02735057dc69d374473945e697e80e2e9"
+      "sha256": "21545d859185d133ae1bf8207e2c88024bd82576dc5914f7d6ce929e4ae347cd"
     },
     {
       "path": "qa/station_fixture.py",
       "sha256": "2d6b0ef7ecf29bed4124de9c606bcbd58439e6bfd02e0577af73a97602c19978"
+    },
+    {
+      "path": "qa/verify-crew.cjs",
+      "sha256": "9120487fab11dbfa63dc70ffa559dfb2d45fbb226474a60219ff8ef685243f4a"
     },
     {
       "path": "qa/verify.cjs",
@@ -80,6 +124,10 @@
     {
       "path": "test/adapter.test.cjs",
       "sha256": "5fab446c9f517e0e0972305bf18c7d34b57a0f016d6644fc3200b9da140061e4"
+    },
+    {
+      "path": "test/crew.test.cjs",
+      "sha256": "77567383ac1f68b0dcbae64b6305ed159f9783d87fa8f76d462d7d15b589b259"
     }
   ]
 }

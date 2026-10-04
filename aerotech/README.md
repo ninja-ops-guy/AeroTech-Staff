@@ -33,7 +33,8 @@ On Windows, double-click `start-aerotech.cmd` for the offline studio or run the 
 
 ## What works
 
-- AeroTech industrial floor using byte-identical TechOps Hero background, Mike sprite atlas and workstation props.
+- AeroTech industrial floor using byte-identical TechOps Hero background, Mike/Waldo/Katrin/Manchez sprite atlases, operator/clerk portraits and workstation props.
+- Stable character assignments by worker, a local appearance picker, authored idle/locomotion frames, foot-anchored room transitions and frozen paused/stale/reduced-motion views.
 - StarNet's pure station document model supplies the named display zones. The new renderer is adapted to the game's side-view artwork; this is not an indiscriminate texture replacement in StarNet's top-down renderer.
 - Missions, host task states, owner/attempt information, base/head identities, checks, findings, task artifact text and event records from the real Command Station API.
 - Search, floor/board views, clickable task sprites, evidence dialogs, responsive layout and reduced motion.
@@ -63,7 +64,7 @@ No settings or credentials are imported from the existing StarNet app. Existing 
 node --test test/*.test.cjs
 ```
 
-See `qa/verification.json` for the checks actually performed for the delivered candidate. Future Windows native/Tauri qualification, runtime Hermes execution and full RFS acceptance remain separate work. A deterministic station training mission exercises real local Git/check execution without making model calls.
+See `qa/crew-verification.json` for the current crew browser checks. `qa/verification.json` and `qa/initial-build-manifest.json` preserve the initial alpha’s historical integration evidence. Future Windows native/Tauri qualification, runtime Hermes execution and full RFS acceptance remain separate work. A deterministic station training mission exercises real local Git/check execution without making model calls.
 
 ## Sources and rights
 
@@ -75,4 +76,10 @@ RESIDUAL source contract: https://github.com/ninja-ops-guy/residual-agent-harnes
 
 ## Continuing in the fork
 
-The parent branch is `feat/aerotech-residual`. All application changes are isolated under `aerotech/` plus root npm scripts. Run `npm run aerotech` from the parent checkout or execute the standalone folder directly. The next engineering steps are native host idempotency/atomic revision support, command-outcome reconciliation tooling, an actual Windows package, additional character selection and richer TechOps room art. Keep these separate from RESIDUAL v1 convergence.
+The parent branch is `feat/aerotech-residual`. All application changes are isolated under `aerotech/` plus root npm scripts. Run `npm run aerotech` from the parent checkout or execute the standalone folder directly. The next engineering steps are native host idempotency/atomic revision support, command-outcome reconciliation tooling, an actual Windows package, richer TechOps room art. Keep these separate from RESIDUAL v1 convergence.
+
+## Crew verification
+
+Run `node qa/verify-crew.cjs` with Playwright available (`TEST_PLAYWRIGHT_MODULE` and `TEST_CHROMIUM_PATH` can override its locations). It uses the local demo and presentation fixtures, never a live station. Mike, Waldo, Katrin and Manchez have six idle and six locomotion frames; the operator and clerk are static portraits that translate between stations. Character identities are visual choices, separate from the authoritative worker record.
+
+`BUILD-MANIFEST.json` describes the current app source. Its digest hashes the UTF-8 compact JSON representation of its sorted `files` array. Images are also listed with source provenance in `ASSET-MANIFEST.json`. QA screenshots and result records are excluded from the build digest.
