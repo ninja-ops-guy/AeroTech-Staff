@@ -1,4 +1,39 @@
-# AeroTech Staff
+# ⚠️ MIGRATED
+
+**This repository is archived.** The AeroTech Staff project has been properly
+forked from [StarNet](https://github.com/androoAGI/starnet) and continues
+active development on the `aerotech-rebrand` branch:
+
+👉 **https://github.com/ninja-ops-guy/starnet/tree/aerotech-rebrand**
+
+---
+
+## Why the move?
+
+The original `AeroTech-Staff` repo was a thin extract (~20 files) containing
+only the RESIDUAL adapter and a vendored slice of StarNet. It did not contain
+the full desktop source, history, or upstream merge capability.
+
+The new fork inherits StarNet's complete tree (Tauri shell, sidecar, frontend,
+build system) while applying:
+
+- Full **AeroTech Staff** rebrand (README, package identity, Tauri config)
+- **TechOps Hero** industrial texture integration (see `ASSET-MANIFEST.md`)
+- The **RESIDUAL Command Station** adapter ported into the full harness
+- Automation scripts for bulk rebrand (`scripts/rebrand.mjs`) and asset
+  verification (`scripts/asset-check.mjs`)
+
+---
+
+## Historical record (0.1 alpha)
+
+The content below is preserved from the original `AeroTech-Staff` 0.1 alpha.
+It remains valid documentation for the adapter layer, but the integration
+path has changed — see the new fork for current wiring.
+
+---
+
+# AeroTech Staff (0.1 alpha — archived)
 
 A local operations floor for RESIDUAL Command Station, styled with TechOps Hero game assets. This repository contains the tested **0.1 source-run alpha** and the master implementation specification for continued development.
 
@@ -36,7 +71,7 @@ On Windows, you can also double-click `aerotech/start-aerotech.cmd` and keep its
 
 The floor now includes Mike, Waldo, Katrin, Manchez, the plating operator and the shipping clerk. Select a task and use **Character appearance** to choose a local look; tasks assigned to the same worker share that choice. Choices persist in this browser.
 
-Four characters use the game’s authored idle and locomotion frames. The operator and clerk use their static game portraits. Room transitions use elapsed-time movement with foot anchors; stale or paused missions freeze, and **Motion off** gives an unanimated view. These are cosmetic task representations, not additional agents.
+Four characters use the game's authored idle and locomotion frames. The operator and clerk use their static game portraits. Room transitions use elapsed-time movement with foot anchors; stale or paused missions freeze, and **Motion off** gives an unanimated view. These are cosmetic task representations, not additional agents.
 
 The update passes 16 focused tests and desktop/mobile browser checks. See [`crew-verification.json`](aerotech/qa/crew-verification.json) for the checks and limits.
 
